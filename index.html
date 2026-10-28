@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal de Empregos - Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="formulario">
+    <h1>Cadastro de Vagas</h1>
+    <p class="subtitulo">Preencha seus dados para concorrer às vagas</p>
+
+    <input type="text" name="nome" placeholder="Nome Completo" required>
+    <input type="email" name="email" placeholder="E-mail" required>
+    <input type="tel" name="telefone" placeholder="Telefone" required>
+    <input type="number" name="idade" placeholder="Idade" required>
+    <input type="text" name="cidade" placeholder="Cidade / Estado" required>
+    
+    <select name="escolaridade" required>
+      <option value="">Selecione a Escolaridade</option>
+      <option value="Ensino Fundamental">Ensino Fundamental</option>
+      <option value="Ensino Médio">Ensino Médio</option>
+      <option value="Ensino Superior">Ensino Superior</option>
+      <option value="Pós-graduação">Pós-graduação</option>
+    </select>
+
+    <input type="text" name="cargo" placeholder="Cargo Desejado" required>
+    
+    <textarea name="experiencia" placeholder="Resumo da Experiência Profissional"></textarea>
+
+    <button>Enviar Cadastro</button>
+    <p id="aviso"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
